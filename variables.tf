@@ -4,6 +4,3 @@ variable "password" { }
 variable "client_certificate" { }
 variable "client_key" { }
 variable "cluster_ca_certificate" { }
-variable "docker_image" { }
-variable "app_name" { }
-variable "port" { }
