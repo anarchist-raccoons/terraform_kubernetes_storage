@@ -12,7 +12,7 @@ provider "kubernetes" {
 # Creates a dynamic volume
 resource "kubernetes_storage_class" "azure_file" {
   metadata {
-    name = "azurefile"
+    name = "azurefile_ep"
   }
 
   storage_provisioner = "kubernetes.io/azure-file"
