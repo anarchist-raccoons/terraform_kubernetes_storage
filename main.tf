@@ -1,11 +1,11 @@
 provider "kubernetes" {
 #  load_config_file = false
-  host = var.host
-  username = var.username
-  password = var.password
-  client_certificate = var.client_certificate
-  client_key = var.client_key
-  cluster_ca_certificate = var.cluster_ca_certificate
+  host = "${var.host}"
+  username = "${var.username}"
+  password = "${var.password}"
+  client_certificate = "${var.client_certificate}"
+  client_key = "${var.client_key}"
+  cluster_ca_certificate = "${var.cluster_ca_certificate}"
 }
 
 # Storage Class https://kubernetes.io/docs/concepts/storage/storage-classes/
