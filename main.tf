@@ -16,7 +16,7 @@ resource "kubernetes_storage_class" "azure_file" {
   }
 
   storage_provisioner = "kubernetes.io/azure-file"
-  reclaim_policy = "Retain"
+  #reclaim_policy = "Retain"
   parameters = {
     skuname = "Standard_LRS"
   }
@@ -29,7 +29,7 @@ resource "kubernetes_storage_class" "azure_disk" {
   }
 
   storage_provisioner = "kubernetes.io/azure-disk"
-  reclaim_policy = "Retain"
+  #reclaim_policy = "Retain"
   parameters = {
     kind = "managed"
     storageaccounttype = "Standard_LRS"
